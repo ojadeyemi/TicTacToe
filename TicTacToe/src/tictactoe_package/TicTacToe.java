@@ -61,6 +61,7 @@ public class TicTacToe {
 		}
 		
 	}
+	@SuppressWarnings("rawtypes")
 	public static String checkWinner() {
 		List topRow = Arrays.asList(1,2,3);
 		List midRow = Arrays.asList(4,5,6);
@@ -108,6 +109,7 @@ public class TicTacToe {
 		printGameBoard(gameBoard);
 		
 		while(true) {
+			@SuppressWarnings("resource")
 			Scanner scan = new Scanner(System.in);
 			
 			System.out.print("Enter your placement (1-9): ");
